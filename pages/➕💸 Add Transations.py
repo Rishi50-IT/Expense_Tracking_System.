@@ -28,13 +28,12 @@ with t1:
         description = st.text_area("Description / Notes")     
 
     
-    if st.form_submit_button("Add Income"):
-           
-           income = {"Category": category,"Amount": amount,"Month": month,"Date": income_date,"Payment": payment_method,"Description": description}
+        if st.form_submit_button("Add Income"):
+            income = {"Category": category,"Amount": amount,"Month": month,"Date": income_date,"Payment": payment_method,"Description": description}
 
-           st.session_state.income_data.append(income)
+            st.session_state.income_data.append(income)
 
-           st.success("Income Saved Successfully ✅")
+            st.success("Income Saved Successfully ✅")
 
 
 st.markdown("---")
