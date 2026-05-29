@@ -348,6 +348,26 @@ streamlit-lottie==0.0.5
 ```
 
 
+![Home](images/home1.png)
+![Home](images/home2.png)
+![Login](images/login1.png)
+![Login](images/login2.png)
+![Profile](images/profile1.png)
+![Profile](images/profile2.png)
+![Transactions](images/t1.png)
+![Transactions](images/t2.png)
+![Transactions](images/t3.png)
+![Transactions](images/t4.png)
+![Transactions](images/t5.png)
+![Reports](images/r1.png)
+![Reports](images/r2.png)
+![Reports](images/r3.png)
+![Reports](images/r4.png)
+![Reports](images/r5.png)
+![Reports](images/r6.png)
+
+
+
 ### Deploy to Streamlit Cloud (Free)
 1. Push your code to GitHub
 2. Go to [share.streamlit.io](https://share.streamlit.io)
