@@ -4,9 +4,9 @@ import streamlit.components.v1 as com
 from streamlit_lottie import st_lottie
 
 
-
-st.header(" 💰 Expense Tracking System")
 st.set_page_config(page_title="💰 Expense Tracker")
+st.header(" 💰 Expense Tracking System")
+
 st.logo("logo.png")
 st.write("Welcome to the expense tracking webpage. You can Track Income & Expenses Easily ")
 com.iframe("https://lottie.host/embed/872ed4cc-0112-4b2b-a488-d3ec21fa9632/FY2sesenYh.lottie")
