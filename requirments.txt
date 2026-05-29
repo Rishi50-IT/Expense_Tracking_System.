@@ -3,4 +3,4 @@ streamlit==1.57.0
 matplotlib==3.10.8
 pymongo==4.17.0
 toml==0.10.2
-streamlit-lottie==0.0.5
+streamlit-lottie
