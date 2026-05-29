@@ -73,10 +73,10 @@ with tab2:
       
           st.checkbox("Terms &Conditions")
           if st.form_submit_button("SIGNUP"):
-               #my.insert_one({"Username":us ,"Mobileno":mn,"Address":ad,"email":e,"password":p,"photo":lp})
+               my.insert_one({"Username":us ,"Mobileno":mn,"Address":ad,"email":e,"password":p,"photo":str1})
                if p==cp :
-                 #st.success("Thank you for SIGNUP")
-                 my.insert_one({"Username":us ,"Mobileno":mn,"Address":ad,"email":e,"password":p,"photo":lp})
+                 st.success("Thank you for SIGNUP")
+                
                  st.balloons()
                else:
                  st.error(" Your password is not same")
