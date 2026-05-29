@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 import streamlit.components.v1 as com
-from streamlit-lottie import st_lottie
+from streamlit-lottie import st-lottie
 
 
 
