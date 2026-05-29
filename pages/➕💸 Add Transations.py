@@ -3,7 +3,7 @@ import pandas as pd
 #import pymongo
 from datetime import date
 import streamlit.components.v1 as com
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 #live server connection
 #conn= pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
