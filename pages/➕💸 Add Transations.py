@@ -6,8 +6,8 @@ import streamlit.components.v1 as com
 from streamlit_lottie import st_lottie
 
 #live server connection
-conn= pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
-
+#conn= pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
+conn=pymongo.MongoClient("mongodb+srv://Rishi_Munda:<db_password>@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
 
 #for local db
 #conn= pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3")
