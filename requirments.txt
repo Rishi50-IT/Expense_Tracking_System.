@@ -3,4 +3,5 @@ streamlit
 streamlit-lottie
 matplotlib
 pymongo
+requests
 
