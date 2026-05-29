@@ -56,11 +56,12 @@ with tab2:
           
           st.subheader("👤 ➕Create New Account")
           com.iframe("https://lottie.host/embed/7467ad87-9159-4b91-9408-315468cde80d/sEHVpSU2at.lottie")
-          us=st.text_input("Username")
-          mn=st.text_input("Mobile no")
-          dob=st.date_input("DOB" ,min_value=date(1975,1,1),max_value=date.today())
-          ad=st.text_area("Address")
-          e=st.text_input("Email")
+          us=st.text_input("👤 Username")
+          
+          mn=st.text_input("📱 Mobile no")
+          dob=st.date_input("🎂 DOB" ,min_value=date(1975,1,1),max_value=date.today())
+          ad=st.text_area("🏠Address")
+          e=st.text_input(" 📧 Email")
           p=st.text_input("🗝️Password:", type="password")
           cp=st.text_input("🈴Conform Password:" , type="password")
           lp=st.camera_input("⋆.📷˚Click your Picture")
