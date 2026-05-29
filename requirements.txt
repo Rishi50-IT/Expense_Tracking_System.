@@ -1,0 +1,5 @@
+matplotlib==3.10.8
+streamlit==1.57.0
+streamlit-lottie==0.0.5
+pymongo==4.17.0
+pandas==3.0.2
