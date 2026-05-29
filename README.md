@@ -230,29 +230,29 @@ Managing personal finances is a challenge for millions of people. This system pr
 │  Username:  [_________________________]         │
 │  Password:  [_________________________]         │
 │                                                 │
-│  [    SignIn  ]   [   SignUP   ]             │
+│  [    SignIn  ]   [   SignUP   ]                │
 └─────────────────────────────────────────────────┘
 ```
 
 ### Screen 2 — Dashboard (Home)
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 💸 Expense Tracker         |  👤 John Doe     [Logout]          │
+│ 💸 Expense Tracker         |  👤 John Doe     [Logout]         │
 │─────────────────────────────────────────────────────────────────│
 │ 📊 May 2026 Summary                                             │
-│ ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
-│ │ Total Income │  │Total Expense │  │   Balance    │           │
-│ │  ₹45,000     │  │  ₹28,500     │  │  ₹16,500     │           │
-│ └──────────────┘  └──────────────┘  └──────────────┘           │
-│                                                                  │
+│ ┌──────────────┐  ┌──────────────┐  ┌──────────────┐            │
+│ │ Total Income │  │Total Expense │  │   Balance    │            │
+│ │  ₹45,000     │  │  ₹28,500     │  │  ₹16,500     │            │
+│ └──────────────┘  └──────────────┘  └──────────────┘            │
+│                                                                 │
 │  [Pie Chart: Expense by Category]  [Bar Chart: Monthly Trend]   │
-│                                                                  │
+│                                                                 │
 │  Recent Transactions                                            │
-│  ┌────────────────────────────────────────────────────────┐    │
+│  ┌────────────────────────────────────────────────────────┐     │
 │  │ 26 May  │ 🍕 Food        │ -₹450   │ Zomato Order      │    │
 │  │ 25 May  │ 🚌 Transport   │ -₹120   │ Auto Rickshaw     │    │
 │  │ 25 May  │ 💰 Salary      │ +₹45000 │ Monthly Salary    │    │
-│  └────────────────────────────────────────────────────────┘    │
+│  └────────────────────────────────────────────────────────┘     │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -267,24 +267,24 @@ Managing personal finances is a challenge for millions of people. This system pr
 │  Date:      [ 27/05/2026     ]              │
 │  Payment:   [ UPI            ▼ ]            │
 │  Note:      [ Dinner at restaurant ]        │
-│                                              │
-│            [ ✅ Add Transaction ]            │
+│                                             │
+│            [ ✅ Add Transaction ]           │
 └─────────────────────────────────────────────┘
 ```
 
 ### Screen 4 — Budget Manager
 ```
 ┌──────────────────────────────────────────────────────┐
-│  🎯 Budget Manager — May 2026                        │
-│  ────────────────────────────────────────────────── │
+│  🎯 Budget Manager — May 2026                        │ 
+│  ──────────────────────────────────────────────────  │
 │  Food & Dining                                       │
-│  ████████████░░░░░░  ₹4,200 / ₹6,000  (70%)         │
+│  ████████████░░░░░░  ₹4,200 / ₹6,000  (70%)          │
 │                                                      │
 │  Transport                                           │
-│  ██████████████████  ₹3,500 / ₹3,000  ⚠️ OVERSPENT  │
+│  ██████████████████  ₹3,500 / ₹3,000  ⚠️ OVERSPENT   │
 │                                                      │
 │  Entertainment                                       │
-│  ████░░░░░░░░░░░░░░  ₹800 / ₹2,000   (40%)          │
+│  ████░░░░░░░░░░░░░░  ₹800 / ₹2,000   (40%)           │
 └──────────────────────────────────────────────────────┘
 ```
 
@@ -294,20 +294,20 @@ Managing personal finances is a challenge for millions of people. This system pr
 │  📈 Analytics & Reports                                  │
 │  ──────────────────────────────────────────────────────  │
 │                                                          │
-│  Filter: [Jan ▼] to [May ▼] [2026 ▼]  [Apply]          │
+│  Filter: [Jan ▼] to [May ▼] [2026 ▼]  [Apply]            │
 │                                                          │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │         Monthly Income vs Expense (Bar Chart)    │   │
-│  │  ██ Income  ██ Expense                           │   │
-│  │  Jan  Feb  Mar  Apr  May                        │   │
-│  └──────────────────────────────────────────────────┘   │
+│  ┌──────────────────────────────────────────────────┐    │
+│  │         Monthly Income vs Expense (Bar Chart)    │    │
+│  │  ██ Income  ██ Expense                           │    │
+│  │  Jan  Feb  Mar  Apr  May                        │     │
+│  └──────────────────────────────────────────────────┘    │
 │                                                          │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │         Spending by Category (Pie Chart)         │   │
-│  │  🟢 Food 35%  🔵 Transport 20%  🟡 Bills 25%    │   │
-│  └──────────────────────────────────────────────────┘   │
+│  ┌──────────────────────────────────────────────────┐    │
+│  │         Spending by Category (Pie Chart)         │    │
+│  │  🟢 Food 35%  🔵 Transport 20%  🟡 Bills 25%    │    │
+│  └──────────────────────────────────────────────────┘    │
 │                                                          │
-│  [ 📥 Download CSV Report ]                             │
+│  [ 📥 Download CSV Report ]                              │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -346,26 +346,449 @@ Pillow==10.2.0
 matplotlib==3.10.8
 streamlit-lottie==0.0.5
 ```
+1.The Main Page of my  Python Streamlit website is Home.py .
+ in this page I describe my project
+
+![Home](images/home1.png)       ![Home](images/home2.png)
+```python
+import streamlit as st
+import time
+import streamlit.components.v1 as com
+from streamlit_lottie import st_lottie
 
 
-![Home](images/home1.png)
-![Home](images/home2.png)
-![Login](images/login1.png)
-![Login](images/login2.png)
-![Profile](images/profile1.png)
-![Profile](images/profile2.png)
-![Transactions](images/t1.png)
-![Transactions](images/t2.png)
-![Transactions](images/t3.png)
-![Transactions](images/t4.png)
+st.set_page_config(page_title="💰 Expense Tracker")
+st.header(" 💰 Expense Tracking System")
+
+st.logo("logo.png")
+st.write("Welcome to the expense tracking webpage. You can Track Income & Expenses Easily ")
+com.iframe("https://lottie.host/embed/872ed4cc-0112-4b2b-a488-d3ec21fa9632/FY2sesenYh.lottie")
+st.toast("welcome to Expense Tracke")
+with st.spinner("Loading..."):
+    time.sleep(3)
+st.subheader("Project Description:")
+st.image("expense _tracker_image.png")
+st.markdown('''Expense Tracker is a smart web application that helps users to  monitor, analyze, manage and improve their financial activities
+expenses efficiently.
+The system uses AI/ML techniques to provide:
+
+- Expense prediction
+- Spending analysis
+- Smart recommendations
+- Budget alerts
+
+The project is developed using Python and Streamlit.
+We use MongoDB as a Backend DataBase.
+
+
+''')
+with st.expander("See  More Details About Project"):
+    st.write("""About Us:Begginer Python Developer | Passionate about AI/ML | Building Innovative Projects | Open to Collaborations | Always Learning and Growing
+               
+             Contact Us:93xxxxxx67
+
+             """)
+
+st.markdown("[👔](https://www.linkedin.com/in/rishi-munda-a88b80224) |"
+" [Github](https://github.com/Rishi50-IT)|""[✖️](https://twitter.com/@340Rishi)")
+st.caption("@2026 Expense Tracking System website | Made with love ")
+
+```
+
+2. In my main folder one more subfolder whith name is pages . In pages folder my login page is available
+   
+![Login](images/login1.png)  ![Login](images/login2.png)
+
+'''Python
+import streamlit as st
+import pymongo
+import random
+import time
+from datetime import date
+import streamlit.components.v1 as com
+from streamlit_lottie import st_lottie
+
+#live server connection
+#conn= pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
+
+
+conn= pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3")
+mydb=conn["expensedb"]
+my=mydb["expenseinfo"]
+
+
+
+
+
+progress = st.progress(0)
+for i in range(100):
+     progress.progress(i + 1)
+     time.sleep(0.02)
+     progress.empty() 
+tab1,tab2=st.tabs(["SIGNIN" , "SIGNUP"])
+with tab1:
+     with st.form("tab1"):
+
+           st.subheader("🔐Login Your Account")
+           com.iframe("https://lottie.host/embed/55bc33c7-9ba7-4d9b-9716-219960a85fbd/dYVC0xsrbu.lottie")
+           em=st.text_input("📧Email:")
+           pa=st.text_input("🔑Password:" , type="password")
+           st.checkbox("Terms &Conditions")
+           if st.form_submit_button("SIGNIN"):
+                if not em or not pa  :
+                     st.error("Fill all fields")
+                else :
+                     user=my.find({"email":em,"password":pa})
+                     v=0
+                     for data in user:
+                          v=v+1
+                          st.session_state["Email"]=data['email']
+                          st.session_state["password"]=data["password"]
+                          st.session_state["image"]=data['photo']
+                          st.success(f"🤝𝐖𝐄𝐋𝐂𝐎𝐌𝐄:{data['email']}")
+                          st.switch_page("pages/👤 Profile.py")
+
+                     if v==0 :
+                              st.error("Invalid Login Details")
+                
+              
+
+with tab2:
+    with st.form("tab2"):
+          
+          st.subheader("👤 ➕Create New Account")
+          com.iframe("https://lottie.host/embed/7467ad87-9159-4b91-9408-315468cde80d/sEHVpSU2at.lottie")
+          us=st.text_input("Username")
+          mn=st.text_input("Mobile no")
+          dob=st.date_input("DOB" ,min_value=date(1975,1,1),max_value=date.today())
+          ad=st.text_area("Address")
+          e=st.text_input("Email")
+          p=st.text_input("🗝️Password:", type="password")
+          cp=st.text_input("🈴Conform Password:" , type="password")
+          lp=st.camera_input("⋆.📷˚Click your Picture")
+          count=random.randrange(1,100000)
+          str1="img"
+          str1=str1+str(count)+".jpg"
+          if lp:
+              with open(str1,"wb") as f:
+                    f.write(lp.getvalue())
+      
+          st.checkbox("Terms &Conditions")
+          if st.form_submit_button("SIGNUP"):
+               my.insert_one({"Username":us ,"Mobileno":mn,"Address":ad,"email":e,"password":p,"photo":str1})
+               if p==cp :
+                 st.success("Thank you for SIGNUP")
+                 #my.insert_one({"Username":us ,"Mobileno":mn,"Address":ad,"email":e,"password":p,"photo":lp})
+                 st.balloons()
+               else:
+                 st.error(" Your password is not same")
+st.markdown("---")
+st.caption("@2026 Expense Tracking Systm Login Form")
+'''
+
+3.In pages folder one more file name Profile.py
+in thispage all the information of user can see profile  details and they can also change their password and logout.
+
+![Profile](images/profile1.png)       ![Profile](images/profile2.png)
+
+
+'''import streamlit as st
+import pymongo
+import streamlit.components.v1 as com
+from streamlit_lottie import st_lottie
+
+#for live server data base connection
+#conn= pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
+
+#for local db
+conn= pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3")
+mydb=conn["expensedb"]
+my=mydb["expenseinfo"]
+
+    
+st.title("User Profile")
+
+com.iframe("https://lottie.host/embed/cc5b0694-3397-4044-8a59-e72ab8a47e5f/9aZ5nLcu0V.lottie")
+
+@st.dialog("CHANGE PASSWORD")
+def cp():
+      op=st.text_input("Enter the old Password :")
+      np=st.text_input("Enter the New Password :")
+      if st.button("Change Password "):
+            reset=my.update_one({"password":op},{'$set':{"password":np}})
+            st.success("password change successfully")
+
+
+em=st.session_state["Email"]
+imag=st.session_state["image"]
+user=my.find({"email":em})
+
+for data in user:
+      e=data['email']
+      st.write(f"Welcome {e} 👋")
+      p=data['photo']
+      u=data['Username']
+      m=data['Mobileno']
+      a=data['Address']
+      
+      
+  
+    
+c1,c2,c3, c4=st.columns(4)
+if c1.button("🪪 see profile",use_container_width=True):
+             str1=data["email"]
+             str2=st.session_state["password"]
+             str3=st.session_state["image"]
+             user=my.find({"email":str1,"password":str2,"image":str3})
+             st.success("user profile")
+             st.image(p)
+             st.logo(p)
+             st.text_input("Username",u)  
+             st.text_input("Mobile No",m)  
+             st.text_input("Address",a)                             
+             st.text_input("Email",e)                             
+                           
+
+if c2.button("🔑change password ",use_container_width=True):
+      cp()
+if c3.button("➜]Logout",use_container_width=True):
+         st.session_state.data = False
+         st.session_state.email = ""
+         st.session_state.image = ""
+         st.success("You have been logged out")
+         st.switch_page("login.py")
+if c4.button("➕Add Transactions",use_container_width=True):
+         st.switch_page("pages/➕💸 Add Transations.py")'''
+
+4. In pages folder One is transaction page name Add Transaction.py
+   In this page you can add their income and expense you get all expenses and income details in table formate you also download this in json formate.
+    
+![Transactions](images/t1.png)                    ![Transactions](images/t2.png)
+![Transactions](images/t3.pngz)                   ![Transactions](images/t4.png)
 ![Transactions](images/t5.png)
-![Reports](images/r1.png)
-![Reports](images/r2.png)
-![Reports](images/r3.png)
-![Reports](images/r4.png)
-![Reports](images/r5.png)
-![Reports](images/r6.png)
 
+'''import streamlit as st
+import pandas as pd
+import pymongo
+from datetime import date
+import streamlit.components.v1 as com
+from streamlit_lottie import st_lottie
+
+#live server connection
+#Aconn= pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
+
+
+#for local db
+conn= pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3")
+mydb=conn["expensedb"]
+transactions=mydb["transactions"]
+
+st.set_page_config(page_title="Transaction")
+if "transactions" not in st.session_state:
+    st.session_state.transactions = []
+st.header("➕ Add New Transaction")
+c1,c2=st.columns(2)
+with c1:
+    com.iframe("https://lottie.host/embed/135ca7d0-9a8e-41e2-9a8b-3985fd3a4530/0FWKtPLPAv.lottie")
+with c2:
+    com.iframe("https://lottie.host/embed/5aed7e16-d179-449b-80c1-d8ef118f27f0/z7O82KECUH.lottie")
+    
+t1,t2=st.tabs(["💵Add Income","Add Expense"])
+with t1:
+    st.title("Add Income ")
+    
+    
+    with st.form("Add Income"):
+        st.subheader("Add Your  Source of Income")
+        com.iframe("https://lottie.host/embed/bfc96117-3415-4682-8141-5a62ce022119/q2M3kpnaAK.lottie")
+        category= st.selectbox("Select Category" ,["Salary","Business","Invetsment", "Other Source of Income"] )
+        amount = st.number_input("Enter Amount",min_value=0,step=50)
+        month = st.selectbox("Select Month",["January","February","March","April","May","June","July","August","September", "October","November","December"])
+        income_date = st.date_input("Select Date",value=date.today())
+        payment_method= st.radio("Payment Method" ,[ "Cash","Upi","Debit Card","Credit Card"])
+        description = st.text_area("Description / Notes")     
+
+    
+        if st.form_submit_button("Add Income"):          
+           income = {"email":st.session_state["Email"],
+               "Type":"Income","Category": category,"Amount": amount,"Month": month,"Date":str( income_date),"Payment": payment_method,"Description": description}
+
+           transactions.insert_one(income)
+           st.success("Income Added Successfully ✅ ")
+
+        st.markdown("---")
+
+
+
+
+with t2:
+
+    st.set_page_config(
+    page_title="Expense Tracker",
+    page_icon="💰",
+    layout="centered")
+
+    st.title("💰 Add Expense")
+
+    with st.form("expense_form"):
+        com.iframe("https://lottie.host/embed/cf361bf1-f911-43d0-9d81-7aac48e58483/P85yY7w2Kn.lottie")
+        category = st.selectbox( "Expense  Category",["Food","Travel","Shopping",
+                                "Bills","Entertainment","E-commerce",
+                                "Education","Health","Other"])
+
+        amount = st.number_input(
+        "💵 Enter Amount",
+        min_value=0,
+        step=50,
+        key="expense_amount")
+
+        month = st.selectbox("Select Expense Month",["January","February",
+                                                 "March","April","May",
+                                                 "June","July","August",
+                                                 "September", "October",
+                                                 "November","December"],key="expense_month")
+        expense_date = st.date_input("Expense Date",value=date.today(),key="expense_date")
+        payment_method = st.radio("Payment Method",["Cash","UPI","Debit Card","Credit Card"],key="expense_payment")
+        description = st.text_area("Expense Description / Notes",key="expense_descriptionn")  
+
+
+        if st.form_submit_button("Add Expense"):
+            expense={"email":st.session_state["Email"],
+                "Type": "Expense",
+                "Category": category,
+                "Amount": amount,
+                "Month": month,
+                "Date":str( expense_date),
+                "Payment": payment_method,
+                "Description": description}
+            transactions.insert_one(expense)
+            st.success("Expense Added Successfully ✅")
+        else:
+            st.info("No Expense  added yet.")
+        
+
+
+
+
+st.markdown("---")
+
+st.subheader("📋 All Transactions")
+data=list(transactions.find( { "email": st.session_state["Email"] }, {"_id": 0} ))
+
+if data:
+    df = pd.DataFrame(data)
+    st.dataframe(df, use_container_width=True)
+
+
+
+
+else:
+    st.info("No Transactions Added Yet")
+
+st.subheader("📑Income Records")
+if st.button("📊 Data Visulization"):
+    st.switch_page("pages/📋📊Reports.py")'''
+
+
+5.last page of the pages folder is Reports.py.in this page you visualize you transaction in the form of piecharst bargraph line grap etc 
+
+![Reports](images/r1.png)    ![Reports](images/r2.png)
+![Reports](images/r3.png)     ![Reports](images/r4.png)
+![Reports](images/r5.png)      ![Reports](images/r6.png)
+'''
+import streamlit as st
+import pandas as pd
+import pymongo
+import matplotlib.pyplot as plt
+import streamlit.components.v1 as com
+from streamlit_lottie import st_lottie 
+
+
+#live server connection
+#conn= pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
+
+conn= pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3")
+
+mydb = conn["expensedb"]
+transactions = mydb["transactions"]
+
+st.title("📊 Reports & Analytics")
+com.iframe("https://lottie.host/embed/a48fea96-bcae-4f62-aee8-e1c07e4f1e59/A5QzK0qPFf.json")
+
+if "Email" not in st.session_state:
+    st.error("Please login to view your reports.")
+    st.stop()
+
+
+records=list(transactions.find({"email":st.session_state["Email"]},{"_id": 0}))
+
+
+
+if not records:
+    st.warning("No Transactions Available")
+
+else:
+    data=pd.DataFrame(records)
+
+    st.subheader("📋 Transaction Table")
+
+    st.dataframe(data, use_container_width=True)
+
+    income = data[data["Type"] == "Income"]["Amount"].sum()
+    expense = data[data["Type"] == "Expense"]["Amount"].sum()
+    balance = income - expense
+
+    c1, c2, c3 = st.columns(3)
+
+    c1.metric("💵 Total Income", f"₹{income}","100%")
+    c2.metric("💸 Total Expense", f"₹{expense}","-9%")
+    c3.metric("💰 Balance", f"₹{balance}","91%")
+
+    st.markdown("---")
+    expense_data = data[data["Type"] == "Expense"]
+if not expense_data.empty:
+        
+        st.subheader("📊 Category Wise Expenses")
+
+        category_data = expense_data.groupby("Category")["Amount"].sum()
+ 
+        fig, ax = plt.subplots()
+
+        ax.bar(category_data.index, category_data.values)
+
+        plt.xticks(rotation=45)
+
+        st.pyplot(fig)
+
+    
+   
+
+st.subheader("🥧 Expense Distribution")
+
+fig2, ax2 = plt.subplots()
+
+ax2.pie(
+        category_data.values,
+        labels=category_data.index,
+        autopct="%1.1f%%"
+    )
+
+st.pyplot(fig2)
+
+
+st.subheader("📈 Monthly Transactions")
+
+monthly = data.groupby("Month")["Amount"].sum()
+
+st.line_chart(monthly)
+
+
+st.subheader("💹 Income vs Expense")
+
+compare = data.groupby("Type")["Amount"].sum()
+
+st.bar_chart(compare)
+'''
 
 
 ### Deploy to Streamlit Cloud (Free)
@@ -478,6 +901,10 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 - [PyMongo Documentation](https://pymongo.readthedocs.io)
 
 ---
+
+
+LIVE URL OF MY WEBSITE : https://expense-tracking-system-website.streamlit.app/
+
 
 <div align="center">
   <p>Made with ❤️ using Python Streamlit & MongoDB</p>
