@@ -1,7 +1,8 @@
 import streamlit as st
 import time
 import streamlit.components.v1 as com
-from streamlit_lottie import st_lottie
+
+from streamlit_lottie import streamlit_lottie
 
 
 st.set_page_config(page_title="💰 Expense Tracker")
