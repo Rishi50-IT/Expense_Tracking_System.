@@ -24,7 +24,7 @@ if "Email" not in st.session_state:
 # ---------------- DATABASE ---------------- #
 
 conn = pymongo.MongoClient(
-    "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.3"
+    "mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0"
 )
 
 mydb = conn["expensedb"]
