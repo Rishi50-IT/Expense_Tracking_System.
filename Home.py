@@ -38,6 +38,6 @@ with st.expander("See  More Details About Project"):
 
              """)
 
-st.markdown("[👔](https://www.linkedin.com/in/rishi-munda-a88b80224) |"
-" [Github](https://github.com/Rishi50-IT)|""[✖️](https://twitter.com/@340Rishi)")
+st.markdown("[In](https://www.linkedin.com/in/rishi-munda-a88b80224) |"
+" [Github](https://github.com/Rishi50-IT)|""[X](https://twitter.com/@340Rishi)")
 st.caption("@2026 Expense Tracking System website | Made with love ")
