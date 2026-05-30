@@ -23,7 +23,7 @@ if "Email" not in st.session_state:
 
 # ---------------- DATABASE ---------------- #
 
-conn = pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124@@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
+conn = pymongo.MongoClient("mongodb+srv://Rishi_Munda:Rahul124%40@cluster0.dod06ln.mongodb.net/?appName=Cluster0")
 mydb = conn["expensedb"]
 transactions = mydb["transactions"]
 
