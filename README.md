@@ -21,6 +21,11 @@ This project was developed as a full-stack solution demonstrating the integratio
 
 ---
 
+## 🌐 Live Demo
+
+[![Open Website](https://img.shields.io/badge/🚀_Live_Demo-Visit_Now-blue?style=for-the-badge)](https://expense-tracking-system-website.streamlit.app/)
+
+
 ## 🎯 Purpose / Advantages / Applications
 
 ### 🔵 Purpose
@@ -110,13 +115,13 @@ Managing personal finances is a challenge for millions of people. This system pr
   │    USERS     │          │   TRANSACTIONS    │          │   CATEGORIES   │
   ├──────────────┤          ├───────────────────┤          ├────────────────┤
   │ _id (PK)     │──────┐   │ _id (PK)          │   ┌──────│ _id (PK)       │
-  │ username     │      └──▶│ user_id (FK)      │   │      │ name           │
-  │ email        │          │ category_id (FK)  │◀──┘      │ type           │
-  │ password     │          │ amount            │          │ icon           │
-  │ created_at   │          │ type (income/exp) │          │ color          │
-  │ profile_pic  │          │ description       │          └────────────────┘
-  └──────────────┘          │ date              │
-          │                 │ payment_method    │          ┌────────────────┐
+  │ username     │      └──▶│ user_id (FK)           │ name          │
+  │ email        │           │ category_id (FK)      │◀──┘      │ type           │
+  │ password     │           │ amount            │     │ icon         │
+  │ created_at   │           │ type (income/exp) │     │ color        │
+  │ profile_pic  │           │ description        │          └────────────────┘
+  └──────────────┘        │ date               │
+          │                  │ payment_method     │          ┌────────────────┐
           │                 │ receipt_img       │          │    BUDGETS     │
           │                 └───────────────────┘          ├────────────────┤
           └────────────────────────────────────────────────│ _id (PK)       │
