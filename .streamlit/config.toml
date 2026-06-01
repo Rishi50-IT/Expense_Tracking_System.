@@ -5,6 +5,6 @@ secondaryBackgroundColor ="#4CAF50" # Changes sidebar and widget backgrounds
 
 textColor = "#000000" # Changes main text color
 
-primaryColor = "#F5E7DE" # Changes primary accent color
+#primaryColor = "#F5E7DE" # Changes primary accent color
 
 
