@@ -1,7 +1,7 @@
 [theme]
 
 backgroundColor ="#C8E6C9"#change the main app background
-secondaryBackgroundColor ="#E0E0E0" # Changes sidebar and widget backgrounds
+secondaryBackgroundColor ="#4CAF50" # Changes sidebar and widget backgrounds
 
 textColor = "#000000" # Changes main text color
 
