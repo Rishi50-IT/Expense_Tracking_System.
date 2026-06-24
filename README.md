@@ -115,23 +115,23 @@ Managing personal finances is a challenge for millions of people. This system pr
   │    USERS     │          │   TRANSACTIONS    │          │   CATEGORIES   │
   ├──────────────┤          ├───────────────────┤          ├────────────────┤
   │ _id (PK)     │──────┐   │ _id (PK)          │   ┌──────│ _id (PK)       │
-  │ username     │      └──▶│ user_id (FK)           │ name          │
-  │ email        │           │ category_id (FK)      │◀──┘      │ type           │
-  │ password     │           │ amount            │     │ icon         │
-  │ created_at   │           │ type (income/exp) │     │ color        │
-  │ profile_pic  │           │ description        │          └────────────────┘
-  └──────────────┘        │ date               │
-          │                  │ payment_method     │          ┌────────────────┐
+  │ username     │      └──▶│ user_id (FK)     │ name     │
+  │ email        │          │ category_id (FK)  │◀──┘     │ type           │
+  │ password     │          │ amount            │          │ icon           │
+  │ created_at   │          │ type (income/exp) │          │ color          │
+  │ profile_pic  │          │ description       │          └────────────────┘
+  └──────────────┘          │    date           │
+          │                 │ payment_method    │          ┌────────────────┐
           │                 │ receipt_img       │          │    BUDGETS     │
           │                 └───────────────────┘          ├────────────────┤
           └────────────────────────────────────────────────│ _id (PK)       │
-                                                          │ user_id (FK)   │
-                                                          │ category_id    │
-                                                          │ limit_amount   │
-                                                          │ month          │
-                                                          │ year           │
-                                                          │ spent_amount   │
-                                                          └────────────────┘
+                                                           │ user_id (FK)   │
+                                                           │ category_id    │
+                                                           │ limit_amount   │
+                                                           │ month          │
+                                                           │ year           │
+                                                           │ spent_amount   │
+                                                           └────────────────┘
 
   RELATIONSHIPS:
   ┌─────────────────────────────────────────────────────────┐
@@ -167,18 +167,18 @@ Managing personal finances is a challenge for millions of people. This system pr
          └────┬─────┘
               │
     ┌─────────▼──────────┐        ┌──────────────────┐
-    │  1.0 AUTHENTICATE  │◀──────▶│   USERS Collection│
-    │  (Login/Register)  │        │   (MongoDB)       │
+    │  1.0 AUTHENTICATE  │◀──────▶│ USERS Collection│
+    │  (Login/Register)  │        │   (MongoDB)      │
     └─────────┬──────────┘        └──────────────────┘
               │ Valid Session
               │
     ┌─────────▼──────────────────────────────────────────┐
-    │                  STREAMLIT DASHBOARD                 │
+    │                  STREAMLIT DASHBOARD               │
     │  ┌───────────────┐    ┌────────────────────────┐   │
     │  │ 2.0 ADD       │    │ 3.0 VIEW TRANSACTIONS  │   │
     │  │ TRANSACTION   │    │ (Filter, Search, Sort) │   │
     │  └──────┬────────┘    └──────────┬─────────────┘   │
-    │         │                        │                  │
+    │         │                        │                 │
     │  ┌──────▼────────┐    ┌──────────▼─────────────┐   │
     │  │ 4.0 BUDGET    │    │ 5.0 ANALYTICS          │   │
     │  │ MANAGEMENT    │    │ (Charts & Reports)     │   │
@@ -188,14 +188,14 @@ Managing personal finances is a challenge for millions of people. This system pr
               ▼                        ▼
     ┌──────────────────────────────────────────────┐
     │            MONGODB DATABASE                  │
-    │  ┌──────────────┐  ┌────────────────────┐   │
-    │  │ transactions │  │     budgets        │   │
-    │  │ collection   │  │     collection     │   │
-    │  └──────────────┘  └────────────────────┘   │
-    │  ┌──────────────┐  ┌────────────────────┐   │
-    │  │  categories  │  │       users        │   │
-    │  │  collection  │  │     collection     │   │
-    │  └──────────────┘  └────────────────────┘   │
+    │  ┌──────────────┐  ┌────────────────────┐    │
+    │  │ transactions │  │     budgets        │    │
+    │  │ collection   │  │     collection     │    │
+    │  └──────────────┘  └────────────────────┘    │
+    │  ┌──────────────┐  ┌────────────────────┐    │
+    │  │  categories  │  │       users        │    │
+    │  │  collection  │  │     collection     │    │
+    │  └──────────────┘  └────────────────────┘    │
     └──────────────────────────────────────────────┘
               │
               ▼
@@ -244,7 +244,7 @@ Managing personal finances is a challenge for millions of people. This system pr
 ┌─────────────────────────────────────────────────────────────────┐
 │ 💸 Expense Tracker         |  👤 John Doe     [Logout]         │
 │─────────────────────────────────────────────────────────────────│
-│ 📊 May 2026 Summary                                             │
+│ 📊 May 2026 Summary                                            │
 │ ┌──────────────┐  ┌──────────────┐  ┌──────────────┐            │
 │ │ Total Income │  │Total Expense │  │   Balance    │            │
 │ │  ₹45,000     │  │  ₹28,500     │  │  ₹16,500     │            │
@@ -254,9 +254,9 @@ Managing personal finances is a challenge for millions of people. This system pr
 │                                                                 │
 │  Recent Transactions                                            │
 │  ┌────────────────────────────────────────────────────────┐     │
-│  │ 26 May  │ 🍕 Food        │ -₹450   │ Zomato Order      │    │
-│  │ 25 May  │ 🚌 Transport   │ -₹120   │ Auto Rickshaw     │    │
-│  │ 25 May  │ 💰 Salary      │ +₹45000 │ Monthly Salary    │    │
+│  │ 26 May  │ 🍕 Food        │ -₹450   │ Zomato Order      │     │
+│  │ 25 May  │ 🚌 Transport   │ -₹120   │ Auto Rickshaw     │     │
+│  │ 25 May  │ 💰 Salary      │ +₹45000 │ Monthly Salary    │     │
 │  └────────────────────────────────────────────────────────┘     │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -264,23 +264,23 @@ Managing personal finances is a challenge for millions of people. This system pr
 ### Screen 3 — Add Transaction
 ```
 ┌─────────────────────────────────────────────┐
-│  ➕ Add New Transaction                      │
-│  ──────────────────────────────────────────  │
-│  Type:      [● Expense  ○ Income]            │
+│  ➕ Add New Transaction                     │
+│  ────────────────────────────────────────── │
+│  Type:      [● Expense  ○ Income]           │
 │  Amount:    [  1200  ] ₹                    │
 │  Category:  [ Food & Dining  ▼ ]            │
 │  Date:      [ 27/05/2026     ]              │
 │  Payment:   [ UPI            ▼ ]            │
 │  Note:      [ Dinner at restaurant ]        │
 │                                             │
-│            [ ✅ Add Transaction ]           │
+│            [ ✅ Add Transaction ]          │
 └─────────────────────────────────────────────┘
 ```
 
 ### Screen 4 — Budget Manager
 ```
 ┌──────────────────────────────────────────────────────┐
-│  🎯 Budget Manager — May 2026                        │ 
+│  🎯 Budget Manager — May 2026                       │ 
 │  ──────────────────────────────────────────────────  │
 │  Food & Dining                                       │
 │  ████████████░░░░░░  ₹4,200 / ₹6,000  (70%)          │
@@ -312,7 +312,7 @@ Managing personal finances is a challenge for millions of people. This system pr
 │  │  🟢 Food 35%  🔵 Transport 20%  🟡 Bills 25%    │    │
 │  └──────────────────────────────────────────────────┘    │
 │                                                          │
-│  [ 📥 Download CSV Report ]                              │
+│  [ 📥 Download CSV Report ]                             │
 └──────────────────────────────────────────────────────────┘
 ```
 
